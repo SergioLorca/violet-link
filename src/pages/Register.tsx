@@ -34,8 +34,8 @@ const Register = () => {
     
     if (password !== confirmPassword) {
       toast({
-        title: 'Passwords do not match',
-        description: 'Please make sure your passwords match.',
+        title: 'Las contraseñas no coinciden',
+        description: 'Por favor, asegúrate de que las contraseñas coincidan.',
         variant: 'destructive',
       });
       return;
@@ -43,8 +43,8 @@ const Register = () => {
     
     if (!acceptTerms) {
       toast({
-        title: 'Terms and Conditions',
-        description: 'Please accept the terms and conditions to continue.',
+        title: 'Términos y Condiciones',
+        description: 'Por favor, acepta los términos y condiciones para continuar.',
         variant: 'destructive',
       });
       return;
@@ -55,15 +55,15 @@ const Register = () => {
     try {
       await register(name, email, password);
       toast({
-        title: 'Registration successful!',
-        description: 'Welcome to Red Violeta. Your account has been created.',
+        title: '¡Registro exitoso!',
+        description: 'Bienvenida a Red Violeta. Tu cuenta ha sido creada.',
       });
       navigate('/profile');
     } catch (error) {
-      console.error('Registration error:', error);
+      console.error('Error de registro:', error);
       toast({
-        title: 'Registration failed',
-        description: 'Please check your information and try again.',
+        title: 'Registro fallido',
+        description: 'Por favor verifica tu información e intenta nuevamente.',
         variant: 'destructive',
       });
     } finally {
@@ -75,18 +75,18 @@ const Register = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-violet-50 to-violet-100 px-4 py-12">
       <Card className="w-full max-w-md shadow-lg fade-in">
         <CardHeader className="space-y-1 text-center">
-          <CardTitle className="text-3xl font-bold text-gradient">Create an Account</CardTitle>
+          <CardTitle className="text-3xl font-bold text-gradient">Crear una Cuenta</CardTitle>
           <CardDescription>
-            Join our community of women supporting each other
+            Únete a nuestra comunidad de mujeres apoyándose mutuamente
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
+              <Label htmlFor="name">Nombre Completo</Label>
               <Input
                 id="name"
-                placeholder="Jane Doe"
+                placeholder="María López"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -94,11 +94,11 @@ const Register = () => {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">Correo Electrónico</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="tu@ejemplo.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -106,7 +106,7 @@ const Register = () => {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password">Contraseña</Label>
               <Input
                 id="password"
                 type="password"
@@ -118,7 +118,7 @@ const Register = () => {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="confirm-password">Confirm Password</Label>
+              <Label htmlFor="confirm-password">Confirmar Contraseña</Label>
               <Input
                 id="confirm-password"
                 type="password"
@@ -140,13 +140,13 @@ const Register = () => {
                 htmlFor="terms"
                 className="text-sm text-muted-foreground cursor-pointer"
               >
-                I agree to the{' '}
+                Acepto los{' '}
                 <Link to="/terms" className="text-violet-600 hover:text-violet-800">
-                  Terms of Service
+                  Términos de Servicio
                 </Link>{' '}
-                and{' '}
+                y la{' '}
                 <Link to="/privacy" className="text-violet-600 hover:text-violet-800">
-                  Privacy Policy
+                  Política de Privacidad
                 </Link>
               </label>
             </div>
@@ -154,19 +154,19 @@ const Register = () => {
               {isSubmitting ? (
                 <>
                   <Loader className="mr-2 h-4 w-4 animate-spin" />
-                  Creating account...
+                  Creando cuenta...
                 </>
               ) : (
-                'Sign Up'
+                'Registrarse'
               )}
             </Button>
           </form>
         </CardContent>
         <CardFooter className="flex flex-col space-y-4">
           <div className="text-center text-sm">
-            Already have an account?{' '}
+            ¿Ya tienes una cuenta?{' '}
             <Link to="/login" className="text-violet-600 hover:text-violet-800 font-medium">
-              Sign in
+              Iniciar sesión
             </Link>
           </div>
         </CardFooter>
@@ -176,4 +176,3 @@ const Register = () => {
 };
 
 export default Register;
-

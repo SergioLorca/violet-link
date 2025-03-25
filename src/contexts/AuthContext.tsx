@@ -34,11 +34,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Check if user is already logged in (from localStorage)
   useEffect(() => {
     const checkAuth = () => {
-      const storedUser = localStorage.getItem(STORAGE_KEY);
-      if (storedUser) {
-        setUser(JSON.parse(storedUser));
+      try {
+        const storedUser = localStorage.getItem(STORAGE_KEY);
+        if (storedUser) {
+          setUser(JSON.parse(storedUser));
+        }
+      } catch (error) {
+        console.error('Error checking authentication:', error);
+        localStorage.removeItem(STORAGE_KEY);
+      } finally {
+        setIsLoading(false);
       }
-      setIsLoading(false);
     };
     
     checkAuth();
@@ -68,9 +74,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // Save to localStorage and state
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newUser));
       setUser(newUser);
+      
+      return Promise.resolve();
     } catch (error) {
       console.error('Login failed:', error);
-      throw error;
+      return Promise.reject(error);
     } finally {
       setIsLoading(false);
     }
@@ -99,9 +107,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // Save to localStorage and state
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newUser));
       setUser(newUser);
+      
+      return Promise.resolve();
     } catch (error) {
       console.error('Registration failed:', error);
-      throw error;
+      return Promise.reject(error);
     } finally {
       setIsLoading(false);
     }
@@ -129,9 +139,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // Save to localStorage and state
       localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedUser));
       setUser(updatedUser);
+      
+      return Promise.resolve();
     } catch (error) {
       console.error('Profile update failed:', error);
-      throw error;
+      return Promise.reject(error);
     } finally {
       setIsLoading(false);
     }

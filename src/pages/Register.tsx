@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
@@ -18,9 +18,16 @@ const Register = () => {
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   
-  const { register } = useAuth();
+  const { register, isAuthenticated } = useAuth();
   const { toast } = useToast();
   const navigate = useNavigate();
+  
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/profile');
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,6 +60,7 @@ const Register = () => {
       });
       navigate('/profile');
     } catch (error) {
+      console.error('Registration error:', error);
       toast({
         title: 'Registration failed',
         description: 'Please check your information and try again.',
@@ -142,7 +150,7 @@ const Register = () => {
                 </Link>
               </label>
             </div>
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button type="submit" className="w-full bg-gradient-violet" disabled={isSubmitting}>
               {isSubmitting ? (
                 <>
                   <Loader className="mr-2 h-4 w-4 animate-spin" />
@@ -168,3 +176,4 @@ const Register = () => {
 };
 
 export default Register;
+

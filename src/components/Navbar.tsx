@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="nav-item">Home</Link>
+          <Link to="/" className="nav-item">Principal</Link>
           <a href="#about" className="nav-item">About</a>
           <a href="#community" className="nav-item">Community</a>
           <a href="#events" className="nav-item">Events</a>

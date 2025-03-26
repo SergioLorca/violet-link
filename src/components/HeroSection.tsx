@@ -75,10 +75,12 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-violet-400/10 to-pink-400/10 rounded-3xl blur-3xl -z-10"></div>
           <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl glass-card p-4 border border-white/40 animate-float">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-100/80 to-white/80 backdrop-blur-md -z-10"></div>
-            <div className="h-2/3 rounded-xl bg-gradient-to-br from-violet-200 to-pink-200 overflow-hidden mb-4">
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="font-medium text-violet-800">Imagen de la Comunidad</span>
-              </div>
+            <div className="h-2/3 rounded-xl bg-gradient-to-br from-violet-200 to-pink-200 overflow-hidden mb-4 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/5f6ebfce-d27d-4287-9f39-03c28a0d2eb0.png" 
+                alt="Red Violeta Logo" 
+                className="max-h-full max-w-full object-contain p-4"
+              />
             </div>
             <div className="flex flex-col gap-3">
               <div className="h-6 bg-violet-100 rounded-md w-2/3"></div>

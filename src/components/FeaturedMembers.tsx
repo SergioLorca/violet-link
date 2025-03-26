@@ -41,18 +41,6 @@ const FeaturedMembers = () => {
           </p>
         </div>
         
-        <div className="flex flex-col items-center justify-center fade-in" style={{ transitionDelay: '300ms' }}>
-          <img 
-            src="/lovable-uploads/a72dd5ea-1b23-4b21-baa3-776036f7a480.png" 
-            alt="Red Violeta Logo" 
-            className="h-64 mb-4"
-          />
-          <div className="text-center mt-4">
-            <h3 className="text-2xl font-semibold text-violet-800">Red Violeta</h3>
-            <p className="text-lg text-violet-600">Red de mujeres conectadas</p>
-          </div>
-        </div>
-        
         <div className="mt-16 text-center fade-in" style={{ transitionDelay: '500ms' }}>
           <p className="text-violet-800 font-medium mb-2">¡Y muchas más mujeres increíbles como tú!</p>
           <a href="#" className="inline-block px-6 py-2 border border-violet-300 rounded-full text-violet-700 hover:bg-violet-50 transition-colors">

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'; // <--- IMPORTANTE: Importa Link desde react-router-dom
+import { Link } from 'react-router-dom'; // <-- Importar Link
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -83,7 +83,10 @@ const HeroSection = () => {
                 className="rounded-full border-violet-300 text-violet-700 hover:bg-violet-50 btn-hover group text-base h-12"
               >
                 Saber Más
-                <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                <ArrowRight
+                  size={16}
+                  className="ml-2 transition-transform group-hover:translate-x-1"
+                />
               </Button>
             </Link>
           </div>
@@ -141,4 +144,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

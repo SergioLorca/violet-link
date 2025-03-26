@@ -77,7 +77,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-violet-100/80 to-white/80 backdrop-blur-md -z-10"></div>
             <div className="h-2/3 rounded-xl bg-gradient-to-br from-violet-200 to-pink-200 overflow-hidden mb-4 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/5f6ebfce-d27d-4287-9f39-03c28a0d2eb0.png" 
+                src="/lovable-uploads/4d248832-cf05-4109-b973-3473d1d2df58.png" 
                 alt="Red Violeta Logo" 
                 className="max-h-full max-w-full object-contain p-4"
               />

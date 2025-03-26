@@ -39,10 +39,10 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/" className="nav-item">Principal</Link>
-          <a href="#about" className="nav-item">About</a>
-          <a href="#community" className="nav-item">Community</a>
-          <a href="#events" className="nav-item">Events</a>
-          <a href="#contact" className="nav-item">Contact</a>
+          <a href="#about" className="nav-item">Sobre Nosotras</a>
+          <a href="#community" className="nav-item">Comunidad</a>
+          <a href="#events" className="nav-item">Eventos</a>
+          <a href="#contact" className="nav-item">Contacto</a>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -51,26 +51,26 @@ const Navbar = () => {
               <Link to="/profile">
                 <Button variant="outline" className="rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 btn-hover flex items-center gap-2">
                   <User size={16} />
-                  {user?.name?.split(' ')[0] || 'Profile'}
+                  {user?.name?.split(' ')[0] || 'Perfil'}
                 </Button>
               </Link>
               <Button 
                 onClick={() => logout()}
                 className="rounded-full bg-gradient-violet hover:opacity-90 shadow-md btn-hover"
               >
-                Sign Out
+                Cerrar Sesión
               </Button>
             </>
           ) : (
             <>
               <Link to="/login">
                 <Button variant="outline" className="rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 btn-hover">
-                  Sign In
+                  Iniciar Sesión
                 </Button>
               </Link>
               <Link to="/register">
                 <Button className="rounded-full bg-gradient-violet hover:opacity-90 shadow-md btn-hover">
-                  Join Now
+                  Unirse Ahora
                 </Button>
               </Link>
             </>
@@ -89,11 +89,11 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg p-5 flex flex-col gap-4 animate-fade-in border-t border-violet-100">
-          <Link to="/" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <a href="#about" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="#community" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Community</a>
-          <a href="#events" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Events</a>
-          <a href="#contact" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          <Link to="/" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Principal</Link>
+          <a href="#about" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Sobre Nosotras</a>
+          <a href="#community" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Comunidad</a>
+          <a href="#events" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Eventos</a>
+          <a href="#contact" className="text-lg font-medium px-4 py-2 rounded-md hover:bg-violet-50" onClick={() => setIsMenuOpen(false)}>Contacto</a>
           
           <div className="flex flex-col gap-3 mt-3 pt-3 border-t border-violet-100">
             {isAuthenticated ? (
@@ -101,7 +101,7 @@ const Navbar = () => {
                 <Link to="/profile" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="outline" className="w-full justify-center rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 flex items-center gap-2">
                     <User size={16} />
-                    Profile
+                    Perfil
                   </Button>
                 </Link>
                 <Button 
@@ -111,19 +111,19 @@ const Navbar = () => {
                     setIsMenuOpen(false);
                   }}
                 >
-                  Sign Out
+                  Cerrar Sesión
                 </Button>
               </>
             ) : (
               <>
                 <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="outline" className="w-full justify-center rounded-full border-violet-400 text-violet-700 hover:bg-violet-50">
-                    Sign In
+                    Iniciar Sesión
                   </Button>
                 </Link>
                 <Link to="/register" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full justify-center rounded-full bg-gradient-violet hover:opacity-90 shadow-md">
-                    Join Now
+                    Unirse Ahora
                   </Button>
                 </Link>
               </>

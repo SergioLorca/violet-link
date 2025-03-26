@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="text-2xl font-display font-bold bg-gradient-to-r from-violet-100 to-pink-100 bg-clip-text text-transparent">Red Violeta</span>
             </a>
             <p className="text-violet-100 mb-6 text-sm">
-              A social platform designed exclusively for women to connect, share experiences, and network in a safe and empowering environment.
+              Una plataforma social diseñada exclusivamente para mujeres, para conectar, compartir experiencias y hacer networking en un entorno seguro y empoderador.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
@@ -47,34 +47,34 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-violet-200 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="text-violet-200 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#community" className="text-violet-200 hover:text-white transition-colors">Community</a></li>
-              <li><a href="#events" className="text-violet-200 hover:text-white transition-colors">Events</a></li>
-              <li><a href="#contact" className="text-violet-200 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#home" className="text-violet-200 hover:text-white transition-colors">Inicio</a></li>
+              <li><a href="#about" className="text-violet-200 hover:text-white transition-colors">Sobre Nosotras</a></li>
+              <li><a href="#community" className="text-violet-200 hover:text-white transition-colors">Comunidad</a></li>
+              <li><a href="#events" className="text-violet-200 hover:text-white transition-colors">Eventos</a></li>
+              <li><a href="#contact" className="text-violet-200 hover:text-white transition-colors">Contacto</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">Recursos</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Guides</a></li>
-              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Success Stories</a></li>
-              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Support</a></li>
+              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Guías</a></li>
+              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Historias de Éxito</a></li>
+              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+              <li><a href="#" className="text-violet-200 hover:text-white transition-colors">Soporte</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
-            <p className="text-violet-200 mb-4 text-sm">Stay updated with our latest news and events</p>
+            <h3 className="text-lg font-semibold mb-4">Suscríbete</h3>
+            <p className="text-violet-200 mb-4 text-sm">Mantente al día con nuestras últimas noticias y eventos</p>
             <form className="flex">
               <input
                 type="email"
-                placeholder="Your email address"
+                placeholder="Tu correo electrónico"
                 className="flex-1 px-4 py-2 rounded-l-lg focus:outline-none text-gray-900"
               />
               <button type="submit" className="bg-violet-600 px-4 py-2 rounded-r-lg hover:bg-violet-500 transition-colors">
@@ -88,11 +88,11 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-violet-200 text-sm mb-4 md:mb-0">© 2023 Red Violeta. All rights reserved.</p>
+          <p className="text-violet-200 text-sm mb-4 md:mb-0">© 2023 Red Violeta. Todos los derechos reservados.</p>
           <div className="flex space-x-6">
-            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Terms of Service</a>
-            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Cookie Policy</a>
+            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Política de Privacidad</a>
+            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Términos de Servicio</a>
+            <a href="#" className="text-violet-200 hover:text-white text-sm transition-colors">Política de Cookies</a>
           </div>
         </div>
       </div>

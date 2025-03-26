@@ -42,23 +42,23 @@ const HeroSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 w-full">
         <div className="flex flex-col justify-center">
-          <span className="text-sm md:text-base font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block w-fit mb-6 fade-in">Welcome to a new way of connection</span>
+          <span className="text-sm md:text-base font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block w-fit mb-6 fade-in">Bienvenida a una nueva forma de conexión</span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-6 fade-in" style={{ transitionDelay: '100ms' }}>
-            Connecting <span className="text-gradient">Women</span>, Empowering <span className="text-gradient">Lives</span>
+            Conectando <span className="text-gradient">Mujeres</span>, Empoderando <span className="text-gradient">Vidas</span>
           </h1>
           <p className="text-lg text-gray-700 mb-8 max-w-lg fade-in" style={{ transitionDelay: '200ms' }}>
-            Join our vibrant community of women supporting each other, sharing experiences, and growing together in a safe and empowering space.
+            Únete a nuestra vibrante comunidad de mujeres que se apoyan mutuamente, comparten experiencias y crecen juntas en un espacio seguro y empoderador.
           </p>
           <div className="flex flex-wrap gap-4 fade-in" style={{ transitionDelay: '300ms' }}>
             <Button size="lg" className="rounded-full bg-gradient-violet hover:opacity-90 shadow-lg btn-hover text-base px-8 h-12">
-              Join Now
+              Únete Ahora
             </Button>
             <Button variant="outline" size="lg" className="rounded-full border-violet-300 text-violet-700 hover:bg-violet-50 btn-hover group text-base h-12">
-              Learn More <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+              Saber Más <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
           <div className="mt-10 fade-in" style={{ transitionDelay: '400ms' }}>
-            <p className="text-sm text-gray-500 mb-2">Trusted by women across the globe</p>
+            <p className="text-sm text-gray-500 mb-2">De confianza para mujeres de todo el mundo</p>
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 <div className="w-8 h-8 rounded-full bg-violet-300 border-2 border-white flex items-center justify-center text-white text-xs font-medium">JD</div>
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 <div className="w-8 h-8 rounded-full bg-indigo-400 border-2 border-white flex items-center justify-center text-white text-xs font-medium">MP</div>
                 <div className="w-8 h-8 rounded-full bg-violet-500 border-2 border-white flex items-center justify-center text-white text-xs font-medium">+</div>
               </div>
-              <span className="text-sm text-gray-600">Join 10,000+ members</span>
+              <span className="text-sm text-gray-600">Únete a más de 10,000 miembros</span>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-violet-100/80 to-white/80 backdrop-blur-md -z-10"></div>
             <div className="h-2/3 rounded-xl bg-gradient-to-br from-violet-200 to-pink-200 overflow-hidden mb-4">
               <div className="w-full h-full flex items-center justify-center">
-                <span className="font-medium text-violet-800">Community Image</span>
+                <span className="font-medium text-violet-800">Imagen de la Comunidad</span>
               </div>
             </div>
             <div className="flex flex-col gap-3">

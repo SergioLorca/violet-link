@@ -48,30 +48,30 @@ const FeaturedMembers = () => {
 
   const members = [
     {
-      name: "Maria Rodriguez",
-      role: "Tech Entrepreneur",
-      quote: "This community has been instrumental in my professional growth. The support and mentorship I've received are priceless.",
+      name: "María Rodríguez",
+      role: "Emprendedora Tecnológica",
+      quote: "Esta comunidad ha sido fundamental en mi crecimiento profesional. El apoyo y la mentoría que he recibido no tienen precio.",
       imageColor: "bg-violet-500",
       delay: 100
     },
     {
-      name: "Sophia Chen",
-      role: "UX Designer",
-      quote: "Red Violeta has connected me with like-minded women who inspire me daily to push boundaries in design.",
+      name: "Sofía Chen",
+      role: "Diseñadora UX",
+      quote: "Red Violeta me ha conectado con mujeres afines que me inspiran diariamente a romper fronteras en el diseño.",
       imageColor: "bg-pink-400",
       delay: 200
     },
     {
       name: "Aisha Johnson",
-      role: "Marketing Director",
-      quote: "The networking opportunities here have opened doors I never thought possible. So grateful for this space.",
+      role: "Directora de Marketing",
+      quote: "Las oportunidades de networking aquí han abierto puertas que nunca pensé posibles. Estoy muy agradecida por este espacio.",
       imageColor: "bg-indigo-500",
       delay: 300
     },
     {
       name: "Emma Thompson",
-      role: "Healthcare Professional",
-      quote: "Finding a community that understands the unique challenges women face in healthcare has been life-changing.",
+      role: "Profesional de la Salud",
+      quote: "Encontrar una comunidad que entiende los desafíos únicos que enfrentan las mujeres en el sector salud ha cambiado mi vida.",
       imageColor: "bg-violet-600",
       delay: 400
     }
@@ -87,12 +87,12 @@ const FeaturedMembers = () => {
       
       <div className="section-container">
         <div className="max-w-xl mx-auto text-center mb-16">
-          <span className="text-sm font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block mb-4 fade-in">Our Community</span>
+          <span className="text-sm font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block mb-4 fade-in">Nuestra Comunidad</span>
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 fade-in" style={{ transitionDelay: '100ms' }}>
-            Meet Some of Our <span className="text-gradient">Amazing</span> Members
+            Conoce a Algunas de Nuestras <span className="text-gradient">Increíbles</span> Miembros
           </h2>
           <p className="text-gray-700 fade-in" style={{ transitionDelay: '200ms' }}>
-            Red Violeta brings together extraordinary women from diverse backgrounds, all sharing their unique experiences and expertise.
+            Red Violeta reúne a mujeres extraordinarias de diversos orígenes, todas compartiendo sus experiencias y conocimientos únicos.
           </p>
         </div>
         
@@ -103,9 +103,9 @@ const FeaturedMembers = () => {
         </div>
         
         <div className="mt-16 text-center fade-in" style={{ transitionDelay: '500ms' }}>
-          <p className="text-violet-800 font-medium mb-2">And many more incredible women like you!</p>
+          <p className="text-violet-800 font-medium mb-2">¡Y muchas más mujeres increíbles como tú!</p>
           <a href="#" className="inline-block px-6 py-2 border border-violet-300 rounded-full text-violet-700 hover:bg-violet-50 transition-colors">
-            View All Members
+            Ver Todas las Miembros
           </a>
         </div>
       </div>

@@ -25,10 +25,10 @@ const JoinSection = () => {
   }, []);
 
   const benefits = [
-    "Connect with like-minded women",
-    "Access exclusive events and resources",
-    "Share your experiences in a safe space",
-    "Get support for your personal and professional growth"
+    "Conecta con mujeres afines",
+    "Accede a eventos y recursos exclusivos",
+    "Comparte tus experiencias en un espacio seguro",
+    "Obtén apoyo para tu crecimiento personal y profesional"
   ];
 
   return (
@@ -46,10 +46,10 @@ const JoinSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 fade-in">
-                Ready to Join Our <span className="text-gradient">Community</span>?
+                ¿Lista para Unirte a Nuestra <span className="text-gradient">Comunidad</span>?
               </h2>
               <p className="text-gray-700 mb-8 fade-in" style={{ transitionDelay: '100ms' }}>
-                Become part of a vibrant network of women supporting each other. Sign up today and start your journey with Red Violeta.
+                Forma parte de una vibrante red de mujeres que se apoyan mutuamente. Regístrate hoy y comienza tu viaje con Red Violeta.
               </p>
               
               <div className="space-y-3 mb-8">
@@ -65,47 +65,47 @@ const JoinSection = () => {
               
               <div className="flex flex-wrap gap-4 fade-in" style={{ transitionDelay: '500ms' }}>
                 <Button size="lg" className="rounded-full bg-gradient-violet hover:opacity-90 shadow-lg btn-hover">
-                  Join Now
+                  Únete Ahora
                 </Button>
                 <Button variant="outline" size="lg" className="rounded-full border-violet-300 text-violet-700 hover:bg-violet-50 btn-hover group">
-                  Learn More <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  Saber Más <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
               </div>
             </div>
             
             <div className="relative fade-in" style={{ transitionDelay: '300ms' }}>
               <div className="bg-white/80 backdrop-blur-sm border border-white/60 rounded-xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+                <h3 className="text-xl font-semibold mb-4">Contáctanos</h3>
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Tu Nombre</label>
                     <input
                       type="text"
                       id="name"
                       className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
-                      placeholder="Enter your name"
+                      placeholder="Ingresa tu nombre"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
                     <input
                       type="email"
                       id="email"
                       className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
-                      placeholder="Enter your email"
+                      placeholder="Ingresa tu correo"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
                     <textarea
                       id="message"
                       rows={4}
                       className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all resize-none"
-                      placeholder="What would you like to know?"
+                      placeholder="¿Qué te gustaría saber?"
                     ></textarea>
                   </div>
                   <Button className="w-full justify-center rounded-lg bg-gradient-violet hover:opacity-90 shadow-md">
-                    Send Message
+                    Enviar Mensaje
                   </Button>
                 </form>
               </div>

@@ -25,23 +25,23 @@ const AboutSection = () => {
 
   const features = [
     {
-      title: "Safe Space",
-      description: "A secure and moderated platform where women can share freely without judgment or harassment.",
+      title: "Espacio Seguro",
+      description: "Una plataforma segura y moderada donde las mujeres pueden compartir libremente sin juicios ni acoso.",
       delay: 200
     },
     {
-      title: "Mentorship",
-      description: "Connect with accomplished women who can guide you in your personal and professional journey.",
+      title: "Mentoría",
+      description: "Conéctate con mujeres exitosas que pueden guiarte en tu camino personal y profesional.",
       delay: 300
     },
     {
-      title: "Knowledge Sharing",
-      description: "Access resources, workshops, and discussions on topics that matter to women.",
+      title: "Compartir Conocimientos",
+      description: "Accede a recursos, talleres y debates sobre temas que importan a las mujeres.",
       delay: 400
     },
     {
       title: "Networking",
-      description: "Build meaningful connections with women across various fields and industries.",
+      description: "Construye conexiones significativas con mujeres de diversos campos e industrias.",
       delay: 500
     }
   ];
@@ -57,12 +57,12 @@ const AboutSection = () => {
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-sm font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block mb-4 fade-in">Our Mission</span>
+            <span className="text-sm font-medium px-4 py-1.5 bg-violet-100 text-violet-800 rounded-full inline-block mb-4 fade-in">Nuestra Misión</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 fade-in" style={{ transitionDelay: '100ms' }}>
-              Creating a <span className="text-gradient">Transformative</span> Community for Women
+              Creando una Comunidad <span className="text-gradient">Transformadora</span> para Mujeres
             </h2>
             <p className="text-gray-700 mb-8 fade-in" style={{ transitionDelay: '200ms' }}>
-              Red Violeta was founded with a clear vision: to create a digital space where women can connect, share, and grow together. We believe in the power of community to transform lives and break barriers.
+              Red Violeta fue fundada con una visión clara: crear un espacio digital donde las mujeres puedan conectarse, compartir y crecer juntas. Creemos en el poder de la comunidad para transformar vidas y romper barreras.
             </p>
             
             <div className="space-y-6">
@@ -84,8 +84,8 @@ const AboutSection = () => {
               <div className="bg-gradient-to-br from-violet-100/90 to-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8">
                 <div className="flex justify-between items-center mb-6">
                   <div>
-                    <h3 className="font-display font-bold text-lg text-gray-900">Our Impact</h3>
-                    <p className="text-violet-700 text-sm">Growing stronger every day</p>
+                    <h3 className="font-display font-bold text-lg text-gray-900">Nuestro Impacto</h3>
+                    <p className="text-violet-700 text-sm">Creciendo más fuerte cada día</p>
                   </div>
                   <div className="bg-violet-100 h-10 w-10 rounded-full flex items-center justify-center">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@ const AboutSection = () => {
                 <div className="space-y-4">
                   <div className="bg-white/70 rounded-lg p-4 flex justify-between items-center">
                     <div>
-                      <p className="text-sm text-gray-600">Active Members</p>
+                      <p className="text-sm text-gray-600">Miembros Activos</p>
                       <p className="text-xl font-semibold text-gray-900">10,000+</p>
                     </div>
                     <div className="h-12 w-12 bg-violet-100 rounded-md flex items-center justify-center">
@@ -111,7 +111,7 @@ const AboutSection = () => {
                   
                   <div className="bg-white/70 rounded-lg p-4 flex justify-between items-center">
                     <div>
-                      <p className="text-sm text-gray-600">Countries Reached</p>
+                      <p className="text-sm text-gray-600">Países Alcanzados</p>
                       <p className="text-xl font-semibold text-gray-900">45+</p>
                     </div>
                     <div className="h-12 w-12 bg-violet-100 rounded-md flex items-center justify-center">
@@ -125,7 +125,7 @@ const AboutSection = () => {
                   
                   <div className="bg-white/70 rounded-lg p-4 flex justify-between items-center">
                     <div>
-                      <p className="text-sm text-gray-600">Success Stories</p>
+                      <p className="text-sm text-gray-600">Historias de Éxito</p>
                       <p className="text-xl font-semibold text-gray-900">1,200+</p>
                     </div>
                     <div className="h-12 w-12 bg-violet-100 rounded-md flex items-center justify-center">

@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           {isAuthenticated ? (
             <>
-              <Link to="/profile">
+              <Link to="/under-construction">
                 <Button variant="outline" className="rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 btn-hover flex items-center gap-2">
                   <User size={16} />
                   {user?.name?.split(' ')[0] || 'Perfil'}
@@ -63,12 +63,12 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/login">
+              <Link to="/under-construction">
                 <Button variant="outline" className="rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 btn-hover">
                   Iniciar Sesión
                 </Button>
               </Link>
-              <Link to="/register">
+              <Link to="/under-construction">
                 <Button className="rounded-full bg-gradient-violet hover:opacity-90 shadow-md btn-hover">
                   Unirse Ahora
                 </Button>
@@ -98,7 +98,7 @@ const Navbar = () => {
           <div className="flex flex-col gap-3 mt-3 pt-3 border-t border-violet-100">
             {isAuthenticated ? (
               <>
-                <Link to="/profile" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/under-construction" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="outline" className="w-full justify-center rounded-full border-violet-400 text-violet-700 hover:bg-violet-50 flex items-center gap-2">
                     <User size={16} />
                     Perfil
@@ -116,12 +116,12 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/under-construction" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="outline" className="w-full justify-center rounded-full border-violet-400 text-violet-700 hover:bg-violet-50">
                     Iniciar Sesión
                   </Button>
                 </Link>
-                <Link to="/register" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/under-construction" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full justify-center rounded-full bg-gradient-violet hover:opacity-90 shadow-md">
                     Unirse Ahora
                   </Button>

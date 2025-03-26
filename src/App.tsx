@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import UnderConstruction from "./pages/UnderConstruction";
 
 const queryClient = new QueryClient();
 
@@ -23,13 +24,14 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<UnderConstruction />} />
+            <Route path="/register" element={<UnderConstruction />} />
             <Route path="/profile" element={
               <ProtectedRoute>
                 <Profile />
               </ProtectedRoute>
             } />
+            <Route path="/under-construction" element={<UnderConstruction />} />
             {/* Future routes that can be implemented */}
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/community" element={<Community />} /> */}

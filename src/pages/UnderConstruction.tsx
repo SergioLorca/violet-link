@@ -1,20 +1,11 @@
 
-import { useLocation, Link } from "react-router-dom";
-import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: Usuario intentó acceder a una ruta inexistente:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
+const UnderConstruction = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -24,11 +15,15 @@ const NotFound = () => {
             <img 
               src="/lovable-uploads/a72dd5ea-1b23-4b21-baa3-776036f7a480.png" 
               alt="Red Violeta Logo" 
-              className="h-32 mx-auto mb-4"
+              className="h-48 mx-auto mb-4"
             />
           </div>
-          <h1 className="text-4xl font-bold mb-4 text-gradient">404</h1>
-          <p className="text-xl text-gray-700 mb-8">¡Ups! Página no encontrada</p>
+          <h1 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gradient">
+            Web en Construcción
+          </h1>
+          <p className="text-xl text-gray-700 mb-8">
+            Nuestras ingenieras están trabajando arduamente para traerte una experiencia increíble. ¡Pronto estaremos disponibles!
+          </p>
           <Link to="/">
             <Button className="rounded-full bg-gradient-violet hover:opacity-90 shadow-md btn-hover">
               Volver al Inicio
@@ -41,4 +36,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default UnderConstruction;

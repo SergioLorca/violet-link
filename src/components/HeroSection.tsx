@@ -50,11 +50,9 @@ const HeroSection = () => {
             Únete a nuestra vibrante comunidad de mujeres que se apoyan mutuamente, comparten experiencias y crecen juntas en un espacio seguro y empoderador.
           </p>
           <div className="flex flex-wrap gap-4 fade-in" style={{ transitionDelay: '300ms' }}>
-            <Link to="/under-construction">
             <Button size="lg" className="rounded-full bg-gradient-violet hover:opacity-90 shadow-lg btn-hover text-base px-8 h-12">
               Únete Ahora
             </Button>
-              </Link>
             <Button variant="outline" size="lg" className="rounded-full border-violet-300 text-violet-700 hover:bg-violet-50 btn-hover group text-base h-12">
               Saber Más <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
             </Button>

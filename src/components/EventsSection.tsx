@@ -76,16 +76,16 @@ const EventsSection = () => {
       delay: 100
     },
     {
-      title: "Serie de Talleres de Habilidades Técnicas",
-      date: "2 de julio, 2023 • 02:00 PM",
+      title: "Taller tecnológico Desarrollo Web",
+      date: "2 de julio, 2025 • 02:00 PM",
       location: "Madrid, España",
       attendees: 50,
       type: "Presencial",
       delay: 200
     },
     {
-      title: "Retiro de Autocuidado y Bienestar",
-      date: "20-22 de julio, 2023",
+      title: "Running Juntas",
+      date: "20-22 de julio, 2025",
       location: "Barcelona, España",
       attendees: 75,
       type: "Presencial",

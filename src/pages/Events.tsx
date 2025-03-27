@@ -1,10 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Calendar, MapPin, Users, Clock, Heart, Run, Shield, Briefcase, MoonStar, Coffee } from 'lucide-react';
+import { Calendar, MapPin, Users, Clock, Heart, Running, Shield, Briefcase, MoonStar, Coffee } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 
@@ -21,11 +20,10 @@ interface EventProps {
 }
 
 const EventCard = ({ title, date, location, attendees, description, type, category }: EventProps) => {
-  // Función para determinar el icono según la categoría
   const getCategoryIcon = () => {
     switch (category) {
       case 'running':
-        return <Run size={18} className="text-pink-500" />;
+        return <Running size={18} className="text-pink-500" />;
       case 'mindfulness':
         return <Heart size={18} className="text-blue-500" />;
       case 'networking':
@@ -82,7 +80,6 @@ const Events = () => {
   const [activeTab, setActiveTab] = useState("todos");
   
   useEffect(() => {
-    // Animación de fade-in para los elementos
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
@@ -102,7 +99,6 @@ const Events = () => {
     };
   }, []);
 
-  // Lista completa de eventos
   const allEvents: EventProps[] = [
     {
       id: 1,
@@ -256,7 +252,6 @@ const Events = () => {
     }
   ];
   
-  // Filtrar eventos según la pestaña activa
   const filteredEvents = activeTab === "todos" 
     ? allEvents 
     : allEvents.filter(event => event.category === activeTab);
@@ -269,7 +264,6 @@ const Events = () => {
         <section className="py-12 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-white to-violet-50 -z-10"></div>
           
-          {/* Decorative elements */}
           <div className="absolute top-[20%] right-[10%] w-64 h-64 bg-pink-200 rounded-full opacity-20 blur-3xl -z-10"></div>
           <div className="absolute bottom-[30%] left-[15%] w-72 h-72 bg-violet-200 rounded-full opacity-20 blur-3xl -z-10"></div>
           

@@ -12,6 +12,7 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 import UnderConstruction from "./pages/UnderConstruction";
+import Events from "./pages/Events";
 
 const queryClient = new QueryClient();
 
@@ -31,11 +32,11 @@ const App = () => (
                 <Profile />
               </ProtectedRoute>
             } />
+            <Route path="/events" element={<Events />} />
             <Route path="/under-construction" element={<UnderConstruction />} />
             {/* Future routes that can be implemented */}
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/community" element={<Community />} /> */}
-            {/* <Route path="/events" element={<Events />} /> */}
             {/* <Route path="/contact" element={<Contact />} /> */}
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Calendar, MapPin, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 interface EventProps {
   title: string;
@@ -127,10 +128,10 @@ const EventsSection = () => {
         </div>
         
         <div className="mt-16 text-center fade-in" style={{ transitionDelay: '500ms' }}>
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-violet rounded-full text-white font-medium shadow-md hover:opacity-90 transition-opacity">
+          <Link to="/events" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-violet rounded-full text-white font-medium shadow-md hover:opacity-90 transition-opacity">
             <Calendar size={18} />
             Ver Todos los Eventos
-          </a>
+          </Link>
         </div>
       </div>
     </section>

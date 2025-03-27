@@ -85,7 +85,7 @@ const EventsSection = () => {
       delay: 200
     },
     {
-      title: "Running Juntas",
+      title: "Running Juntas por nuestra Ciudad",
       date: "20-22 de julio, 2025",
       location: "Barcelona, España",
       attendees: 75,

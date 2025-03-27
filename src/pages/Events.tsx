@@ -1,9 +1,10 @@
+
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Calendar, MapPin, Users, Clock, Heart, Running, Shield, Briefcase, MoonStar, Coffee } from 'lucide-react';
+import { Calendar, MapPin, Users, Clock, Heart, Activity, Shield, Briefcase, MoonStar, Coffee } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 
@@ -23,7 +24,7 @@ const EventCard = ({ title, date, location, attendees, description, type, catego
   const getCategoryIcon = () => {
     switch (category) {
       case 'running':
-        return <Running size={18} className="text-pink-500" />;
+        return <Activity size={18} className="text-pink-500" />;
       case 'mindfulness':
         return <Heart size={18} className="text-blue-500" />;
       case 'networking':
